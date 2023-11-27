@@ -5,7 +5,7 @@ namespace Fendinger;
 class ConsentGate
 {
 
-	public function getGooglemapsHtml($src)
+	public static function getGooglemapsHtml($src)
 	{
 		try {
 			// $src = 'https://www.google.de/maps/place/Bastian+Allgeier+GmbH/@49.3979886,8.8033528,17z/data=!3m1!4b1!4m5!3m4!1s0x4797ea5672e002ad:0x4002670cf9e4e1be!8m2!3d49.3979839!4d8.8055394';
@@ -134,7 +134,7 @@ class ConsentGate
 	}
 		
 
-	public function getTwittertweetHtml($src)
+	public static function getTwittertweetHtml($src)
 	{
 		try {
 			$src = trim($src);
@@ -151,7 +151,7 @@ class ConsentGate
 		}
 	}
 
-	public function getFacebookpageHtml($src)
+	public static function getFacebookpageHtml($src)
 	{
 		try {
 			$src = trim($src);
